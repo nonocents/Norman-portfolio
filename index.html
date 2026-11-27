@@ -297,6 +297,31 @@
     .work-grid{ grid-template-columns: 1fr; }
   }
 
+  /* ---------- services ---------- */
+  .price-grid{
+    display:grid; grid-template-columns: repeat(3,1fr); gap: 26px;
+    margin-top: 44px;
+  }
+  .price{
+    font-family: var(--font-display);
+    font-size: 1.6rem; font-weight: 600;
+    color: var(--accent);
+    line-height: 1.2;
+  }
+  .price-card p{ margin-bottom: 14px; }
+  .price-card ul{ list-style:none; margin: 0 0 18px; padding: 0; }
+  .price-card li{
+    position: relative; padding-left: 16px; margin-bottom: 6px;
+    color: var(--text-dim); font-size: 0.95rem; line-height: 1.5;
+  }
+  .price-card li::before{ content: "–"; position: absolute; left: 0; color: var(--accent); }
+  .price-card.featured{ border-color: var(--accent); }
+  @media (max-width: 980px){
+    .price-grid{ grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px){
+    .price-grid{ grid-template-columns: 1fr; }
+  }
   /* ---------- process ---------- */
   .process-grid{
     display:grid; grid-template-columns: repeat(3,1fr); gap: 28px;
@@ -368,6 +393,7 @@
     <a class="logo" href="#top">NORMAN <span>CENTENO</span></a>
     <nav class="links">
       <a href="#work">Work</a>
+      <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#contact" class="cta">Get in Touch</a>
     </nav>
@@ -505,6 +531,96 @@
         </article>
 
       </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <span class="eyebrow reveal">Services</span>
+      <h2 class="reveal">Clear prices, no surprises.</h2>
+      <p class="lede reveal">Starting prices in Philippine pesos, with what is included under each one. The final quote depends on scope, so send me your brief and I will confirm an exact price.</p>
+      <div class="price-grid">
+        <article class="rec-card price-card reveal">
+          <div class="rec-head">
+            <span class="rec-id">PKG-01 · ONE-PAGE WEBSITE</span>
+            <span class="rec-tag">Website</span>
+          </div>
+          <h3>One-page website</h3>
+          <ul>
+            <li>Responsive on phones and computers</li>
+            <li>Up to 5 sections, hand-coded</li>
+            <li>About 5 to 7 days, 2 rounds of revisions</li>
+          </ul>
+          <div class="price">From ₱9,500</div>
+        </article>
+        <article class="rec-card price-card reveal">
+          <div class="rec-head">
+            <span class="rec-id">PKG-02 · RESTAURANT WEBSITE</span>
+            <span class="rec-tag">Website &amp; Design</span>
+          </div>
+          <h3>Restaurant website</h3>
+          <ul>
+            <li>Home, menu, location and contact</li>
+            <li>Matched to your brand colors and fonts</li>
+            <li>About 2 weeks, 2 rounds of revisions</li>
+          </ul>
+          <div class="price">From ₱18,000</div>
+        </article>
+        <article class="rec-card price-card reveal">
+          <div class="rec-head">
+            <span class="rec-id">PKG-03 · BUSINESS WEBSITE</span>
+            <span class="rec-tag">Website</span>
+          </div>
+          <h3>Business website</h3>
+          <ul>
+            <li>Up to 5 pages, responsive</li>
+            <li>Contact links and map included</li>
+            <li>About 2 to 3 weeks, 2 rounds of revisions</li>
+          </ul>
+          <div class="price">From ₱22,000</div>
+        </article>
+        <article class="rec-card price-card reveal">
+          <div class="rec-head">
+            <span class="rec-id">PKG-04 · LOGO DESIGN</span>
+            <span class="rec-tag">Brand Identity</span>
+          </div>
+          <h3>Logo design</h3>
+          <ul>
+            <li>A logo concept built around your business</li>
+            <li>Files for print and social media</li>
+            <li>About 5 to 7 days, 2 rounds of revisions</li>
+          </ul>
+          <div class="price">From ₱5,500</div>
+        </article>
+        <article class="rec-card price-card reveal">
+          <div class="rec-head">
+            <span class="rec-id">PKG-05 · MENU OR POSTER</span>
+            <span class="rec-tag">Print &amp; Digital</span>
+          </div>
+          <h3>Menu or poster</h3>
+          <ul>
+            <li>One designed piece</li>
+            <li>Ready for print or social media</li>
+            <li>About 2 to 3 days, 2 rounds of revisions</li>
+          </ul>
+          <div class="price">From ₱3,900</div>
+        </article>
+        <article class="rec-card price-card reveal featured">
+          <div class="rec-head">
+            <span class="rec-id">PKG-06 · RESTAURANT LAUNCH BUNDLE</span>
+            <span class="rec-tag">Best value</span>
+          </div>
+          <h3>Restaurant launch bundle</h3>
+          <ul>
+            <li>Restaurant website, logo and one menu design</li>
+            <li>Save ₱3,500 compared to buying separately</li>
+            <li>About 3 weeks, 2 rounds of revisions each</li>
+          </ul>
+          <div class="price">₱23,900</div>
+        </article>
+      </div>
+      <p class="lede reveal">Early-client offer: ask me about a discount in exchange for a short testimonial. Need an app, dashboard or internal tool? Custom systems are quoted per project, so <a href="#contact">get in touch</a>.</p>
     </div>
   </section>
 
